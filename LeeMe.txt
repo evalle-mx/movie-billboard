@@ -1,0 +1,13 @@
+################################################################################
+#   Aprende React.js desde CERO | Creando web-Page de películas
+#   https://youtu.be/hdgUDN1sgtA
+#   https://gist.github.com/ymulenll/e9bcdee18151d17ba745b0d93d447359
+################################################################################
+
+https://create-react-app.dev/
+
+$ npx create-react-app movie-billboard --use-npm
+$ npm run start         //<= initial testing
+
+
+

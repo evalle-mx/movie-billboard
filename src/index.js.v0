@@ -1,0 +1,69 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+/*/ 1) Creado como variable
+const contenido = <div>
+  <h1>Titulo</h1>
+  <div>
+    Saludos de React
+  </div>
+</div>;
+
+root.render(  
+  contenido
+); //*/
+
+/*/2) Usando componente y 2.1) usando parametros ( props )
+function Componente(props) {
+  console.log('props: ', props ); //cualquier nombre, pero es estandar
+  const vTitulo = props.titulo;
+  return (
+    // <div>
+    //   <h1>Titulo2</h1>
+    //   <div>
+    //     Usando componente
+    //   </div>
+    // </div>
+    <div>
+      <h1>{vTitulo}</h1>
+      <div>
+        {props.texto}
+      </div>
+    </div>
+  )
+} //*/
+
+/*/3) destructurado
+//function Componente(props) {  
+// const {titulo, texto } = props; //destructuring assignment
+function Componente({titulo, texto }) {  //destructuring assignment desde entrada    
+  return (
+    <div>
+      <h1>{titulo}</h1>
+      <div>
+        {texto}
+      </div>
+    </div>
+  )
+} 
+
+root.render(  
+  <Componente titulo="Titulo3" texto="usando componente con parametros"/>
+); //*/
+
+//4) Enviando como hijo (children, palabra reservada)
+function Componente({titulo, children }) {  //destructuring assignment desde entrada    
+  return (
+    <div>
+      <h1>{titulo}</h1>
+      <div>
+        {children}
+      </div>
+    </div>
+  )
+} 
+
+root.render(  
+  <Componente titulo="Titulo4">Texto enviado como children </Componente>
+); //*/

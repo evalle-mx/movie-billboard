@@ -1,0 +1,13 @@
+.moviesGrid {
+    display: grid;  /* muestra los li en un grill */
+    grid-template-columns: repeat(auto-fill, 230px); /* Distribuye en columnas de 230px */
+    gap: 40px;  /* separacion entre elementos */
+    padding: 40px; 
+    justify-content: center; /* justifica los elementos al centro */
+} 
+
+@media (max-width: 560px) {  /* de 0 a 560px de tamano de pantalla */
+    .moviesGrid {
+        grid-template-columns: 100%;
+    }
+}

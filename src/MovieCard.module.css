@@ -1,0 +1,17 @@
+.movieCard{ /*  'movie-card' marca error  */
+    list-style: none;
+    font-size: 1.5rem; 
+    text-align: center;  
+}
+
+.movieImage {
+    border-radius: 10px;
+    background-color: azure;
+}
+
+@media (max-width: 560px) {  /* de 0 a 560px de tamano de pantalla */
+    .movieImage {
+        width: 90%;
+        height: auto;
+    }
+}
